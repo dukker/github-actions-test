@@ -19,7 +19,7 @@ jobs:
       fail-fast: true
     runs-on: ${{matrix.os}}
     env:
-      IS_UNBUNTU_14: ${{matrix.os.is_unbuntu_14}}
+      IS_UNBUNTU_14: ${{matrix.is_unbuntu_14}}
     steps:
       - name: Log node version
         run: node -v
@@ -29,4 +29,4 @@ jobs:
       - name: Log node version
         run: |
           node -v
-          echo ${{IS_UNBUNTU_14}}
+          echo $IS_UNBUNTU_14
